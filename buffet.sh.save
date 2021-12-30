@@ -1,0 +1,12 @@
+r/bin/bash
+
+#buffet exercice: 
+
+BUFFETT="Life is like a snowball. The important thing is finding wet snow and a really long hill."
+# write your code here
+ISAY=${BUFFET}
+echo `un:  ${ISAY}`
+#Change One : first snow would be replace by foot
+POINT=`expr index "$BUFFETT" '.'`
+FIRSTPART = ${BUFFET:$POINT}
+echo `chopfield  $FIRSTPART`
